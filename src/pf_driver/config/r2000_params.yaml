@@ -7,7 +7,7 @@ ros_main:
     start_angle: -1800000
     max_num_points_scan: 0
     packet_type: "C"
-    scan_topic: "/scan"
+    scan_topic: "/diff_drive/scan"
     frame_id: "scanner_link"
     watchdogtimeout: 60000
     watchdog: true

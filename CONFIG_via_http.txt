@@ -1,0 +1,50 @@
+curl http://10.0.10.9/cmd/list_parameters
+
+curl http://10.0.10.9/cmd/set_parameter?hmi_display_mode=off
+curl http://10.0.10.9/cmd/set_parameter?hmi_display_mode=static_logo
+
+curl http://10.0.10.9/cmd/get_parameter?list='scan_frequency;samples_per_scan'
+
+curl http://10.0.10.9/cmd/set_parameter?scan_frequency=35
+
+curl http://10.0.10.9/cmd/set_parameter?samples_per_scan=3600
+
+
+Available configurations:
+
+samples     angular     max. scan   sampling
+per scan    resolution  frequency   rate (max)
+25 200      0.014°      10 Hz       252 kHz
+16 800      0.021°      15 Hz       252 kHz
+12 600      0.029°      20 Hz       252 kHz
+10 080      0.036°      25 Hz       252 kHz
+8400        0.043°      30 Hz       252 kHz
+7200        0.050°      35 Hz       252 kHz
+6300        0.057°      40 Hz       252 kHz
+5600        0.064°      45 Hz       252 kHz
+5040        0.071°      50 Hz       252 kHz
+4200        0.086°      50 Hz       210 kHz
+3600        0.100°      50 Hz       180 kHz
+3150        0.114°      50 Hz       158 kHz
+2800        0.129°      50 Hz       140 kHz
+2520        0.143°      50 Hz       126 kHz
+2400        0.150°      50 Hz       120 kHz
+2100        0.171°      50 Hz       105 kHz
+1800        0.200°      50 Hz       90 kHz
+1680        0.214°      50 Hz       84 kHz
+1440        0.250°      50 Hz       72 kHz
+1200        0.300°      50 Hz       60 kHz
+900         0.400°      50 Hz       45 kHz
+800         0.450°      50 Hz       40 kHz
+720         0.500°      50 Hz       36 kHz
+600         0.600°      50 Hz       30 kHz
+480         0.750°      50 Hz       24 kHz
+450         0.800°      50 Hz       23 kHz
+400         0.900°      50 Hz       20 kHz
+360         1.000°      50 Hz       18 kHz
+240         1.500°      50 Hz       12 kHz
+180         2.000°      50 Hz       9 kHz
+144         2.500°      50 Hz       7 kHz
+120         3.000°      50 Hz       6 kHz
+90          4.000°      50 Hz       5 kHz
+72          5.000°      50 Hz       4 kHz
