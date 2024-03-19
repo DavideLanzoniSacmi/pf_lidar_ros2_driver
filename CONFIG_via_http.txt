@@ -9,6 +9,25 @@ curl http://10.0.10.9/cmd/set_parameter?scan_frequency=35
 
 curl http://10.0.10.9/cmd/set_parameter?samples_per_scan=3600
 
+url http://10.0.10.9/cmd/set_parameter?filter_type=remission
+curl http://10.0.10.9/cmd/set_parameter?filter_remission_threshold=reflector_std
+
+Available filters:
+none        Filtering disabled. Output all recorded samples (pass through).
+average     Calculate arithmetic average from N raw samples
+median      Calculate median from N raw samples
+maximum     Filter raw samples by distance and calculate average
+remission   Filter raw samples by remission and calculate average
+
+filter_remission_threshold:
+diffuse_low     Natural, non-black targets (e.g. gray surfaces)
+diffuse_high    Natural, bright targets (e.g. white surfaces)
+reflector_min   Very small reflectors or very bright natural targets (e.g. metal surfaces)
+reflector_low   Rather small reflectors or reflective natural surface (e.g. polished surfaces)
+reflector_std   All typical reflectors
+reflector_high  Larger reflectors
+reflector_max   Large reflectors
+
 
 Available configurations:
 
