@@ -1,3 +1,13 @@
+PROXY ENVIRONMENT MUST BE UNSET:
+sudo mv /etc/environment /etc/environment.bak
+
+
+ACTUAL WORKING SETUP:
+"scan_frequency":10,
+"samples_per_scan":25200,
+"filter_type":"median",
+
+
 curl http://10.0.10.9/cmd/list_parameters
 
 curl http://10.0.10.9/cmd/set_parameter?hmi_display_mode=off
