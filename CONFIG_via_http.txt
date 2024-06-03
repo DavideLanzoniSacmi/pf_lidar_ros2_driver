@@ -19,7 +19,7 @@ curl http://10.0.10.9/cmd/set_parameter?scan_frequency=35
 
 curl http://10.0.10.9/cmd/set_parameter?samples_per_scan=3600
 
-url http://10.0.10.9/cmd/set_parameter?filter_type=remission
+curl http://10.0.10.9/cmd/set_parameter?filter_type=remission
 curl http://10.0.10.9/cmd/set_parameter?filter_remission_threshold=reflector_std
 
 Available filters:
