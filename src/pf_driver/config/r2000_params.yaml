@@ -1,4 +1,4 @@
-ros_main:
+pf_r2000:
   ros__parameters:
     transport: "udp"
     scanner_ip: "10.0.10.9"
